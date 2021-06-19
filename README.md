@@ -1,5 +1,6 @@
+
 <div align="center">
-<img src="https://github.com/20Techno/Re-X/blob/master/DEB.png" alt="Botto-re" width="500" />
+<img src="https://img.wattpad.com/userbg/monopi123.49228.jpg" alt="Botto-re" width="500" />
 
 # Whatsapp-Botto-Re
 
@@ -7,8 +8,6 @@
 
 ## THERE'S A SUCCESSOR TO THIS PROJECT WITH FULL SUPPORT CHECK IT OUT
 ## <a href="https://github.com/SomnathDas/Whatsapp-Botto-Xre"> Whatsapp-Botto-Xre </href>
-  
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 <p>
   <img src ="https://camo.githubusercontent.com/4d098bb36bf96a8b9ec4821bec5866d86bca15b7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f406f70656e2d77612f77612d6175746f6d6174652e7376673f636f6c6f723d677265656e" />
@@ -125,7 +124,6 @@ Edit `config.json` to customize the bot as needed
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SomnathDas/Whatsapp-Botto-Re/issues). 
 
 ## 🔮 Original Authors 
-<img src="https://github.com/20Techno/Re-X/blob/master/crop.jpg" width="200" />
 
 👤 **Somnath Das**
 
@@ -138,11 +136,6 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 * GitHub: [@AlenSaito1](https://github.com/AlenSaito1)
 * Instagram:
 
-👤 **Nitin** 
-* Twitter: 
-* GitHub:
-* Instagram: 
-
 ## 📝 License
 
 This project is [GNU General Public License v3.0](https://github.com/SomnathDas/Whatsapp-Botto-Re/blob/master/LICENSE) licensed.
@@ -152,3 +145,4 @@ This project is [GNU General Public License v3.0](https://github.com/SomnathDas/
 Give a ⭐️ if this project helped you!
 
 ***
+""
