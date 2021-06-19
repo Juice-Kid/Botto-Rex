@@ -1,0 +1,59 @@
+{
+  "name": "WhatsApp-Botto-xRe",
+  "description": "Well....",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "stickers",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "whatsapp-anime-bot",
+    "whatsapp-botto"
+  ],
+  "website": "https://github.com/Synthesized-Infinity/Whatsapp-Botto-Xre#readme",
+  "repository": "https://github.com/Synthesized-Infinity/Whatsapp-Botto-Xre.git",
+  "logo": "https://i.ibb.co/F3sc7Nb/Purple-Music-Store-Etsy-Banner.png",
+  "success_url": "/",
+  "env": {
+    "BOT_NAME": {
+      "description": "Name of your bot"
+    },
+    "PREFIX": {
+      "description": "Prefix of your bot"
+    },
+    "CRON": {
+      "description": "\"Cron\" string to clear all chats of the bot at specified time",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "A string for the session to be classified and to get access to the server endpoints"
+    },
+    "ADMINS": {
+      "description": "The phone numbers of the users who you want to be admin for the bot (separated by a comma \",\")",
+      "required": false
+    },
+    "MONGO_URI": {
+      "description": "A secret String for Mongodb Connection.(Required)"
+    },
+    "EIF": "https://express-is-fun.herokuapp.com/api",
+    "ADMIN_GROUP_JID": {
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
