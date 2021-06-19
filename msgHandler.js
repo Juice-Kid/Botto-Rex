@@ -52,7 +52,7 @@ module.exports = msgHandler = async (client, message) => {
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
 	if (isCmd && ban.includes(sender.id)) return client.reply(from, 'You\'re banned!', id)
 	if ((message.type == 'sticker') && (stickerArr.includes(message.filehash))) return await sticker.stickerHandler(message, client, isGroupAdmins, isBotGroupAdmins, groupAdmins, color, time)
-	if (isGroupMsg && isRule && (type === 'chat' && message.body.includes('chat.whatsapp.com') && isBotGroupAdmins) && !isGroupAdmins) return await client.removeParticipant(chat.id, author)
+	if (isGroupMsg && isRule && (type === 'chat' && message.body.includes('http://chat.whatsapp.com/') && isBotGroupAdmins) && !isGroupAdmins) return await client.removeParticipant(chat.id, author)
         if (isCmd && msgFilter.isFiltered(from) && !isGroupMsg) return console.log(color('[SPAM!]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
         if (isCmd && msgFilter.isFiltered(from) && isGroupMsg) return console.log(color('[SPAM!]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname), 'in', color(name))
         if (!isCmd && !isGroupMsg) return msg(message, color, true, time)
@@ -379,7 +379,7 @@ ${desc}`)
             if (args.length == 0) return client.reply(from, 'Wrong Format', message.id)
             const link = body.slice(6)
             const minMem = 30
-            const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
+            const isLink = link.match(/(http://chat.whatsapp.com/)/gi)
             const check = await client.inviteInfo(link)
             if (!isLink) return client.reply(from, 'Where\'s the link?', message.id)
             if (check.size < minMem) return client.reply(from, 'The group does not have 30+ members', message.id)
